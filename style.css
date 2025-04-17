@@ -11,7 +11,7 @@
     font-style: normal;
 } 
 body{
-    background-color: #F8F8F8;
+    background-color:white;
     font-family:"TT Lakes", sans-serif;
     width: 320px;
     height:100%;
@@ -26,7 +26,6 @@ body{
 }.header_icon, .icon{
     cursor: pointer;
     width:40px;
-
 }
 .header_icon:first-child{
     margin-right:24px;
@@ -40,6 +39,7 @@ body{
     flex-direction: column;
     gap: 32px;
     padding:0px;
+    margin-bottom: 276px;
 }
 .container_menu__item{
     font-weight: 500;
@@ -61,7 +61,37 @@ body{
     padding:0px;
 
 }
-.container_menu__item:active::after{
-    color:#999;
+.container_menu__item:hover{
+    color:#7E7E82;
+}
+.icon{
+    padding-left:16px;
+}
+.icon:first-child{
+    margin-left:8px;
+}
+.footer{
+    margin-left: 24px;
+}
+.footer_email{
+    font-size: 16px;
+     margin-top: 16px;
+}
+.footer_tel{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.button{
+    margin-top: 40px;
+    margin-left:8px;
+}
+button{
+    border:none;
+    background-color: white;
+    padding-left:16px;
+}
+.button_ru,button:hover{
+    color:#7E7E82;
 }
 
