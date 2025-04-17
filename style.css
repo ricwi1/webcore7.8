@@ -10,15 +10,22 @@
     font-weight: 700;
     font-style: normal;
 } 
+
+/* === Сброс и общие стили === */
+
 body{
+    display: flex;
+    flex-direction: column;
     background-color:white;
     font-family:"TT Lakes", sans-serif;
     width: 320px;
     height:100%;
-    margin:0px;
-    position:fixed;
+    margin:0;
     box-shadow: 20px 0 15px -5px rgba(0, 0, 0, 0.2);
 }
+
+/* === Шапка === */
+
 .header{
     display: flex;
     align-items: center;
@@ -26,6 +33,11 @@ body{
 }.header_icon, .icon{
     cursor: pointer;
     width:40px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.header_icon:hover, .icon:hover {
+    filter: brightness(0.7); 
+    opacity: 0.8;
 }
 .header_icon:first-child{
     margin-right:24px;
@@ -34,56 +46,60 @@ body{
     width:97px;
     margin-right: auto;
 }
+
+/* === Меню === */
+
 .container_menu{
     display:flex;
     flex-direction: column;
     gap: 32px;
-    padding:0px;
+    padding:0;
     margin-bottom: 276px;
 }
 .container_menu__item{
+    display: flex;
     font-weight: 500;
     cursor: pointer;
     margin:0 24px;
-    display: flex;
-    position: relative;
     gap:8px;
     align-items: center;
 }
 .container_menu__item:first-child{
-    margin:0px;
+    margin:0;
     gap: 20px;
     align-items: center;
     color:#7E7E82;
 }
 .container_menu__divider{
     height: 32px;
-    padding:0px;
-
 }
 .container_menu__item:hover{
     color:#7E7E82;
 }
+
+/* === Подвал === */
+
 .icon{
     padding-left:16px;
 }
 .icon:first-child{
-    margin-left:8px;
+    padding-left:24px;
 }
 .footer{
     margin-left: 24px;
 }
 .footer_email{
+    cursor: pointer;
     font-size: 16px;
      margin-top: 16px;
 }
 .footer_tel{
+    cursor: pointer;
     font-size: 32px;
     font-weight: 700;
     margin-top: 20px;
 }
 .button{
-    margin-top: 40px;
     margin-left:8px;
 }
 button{
