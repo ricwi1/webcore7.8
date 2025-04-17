@@ -24,7 +24,9 @@ body{
     align-items: center;
     padding:23px;
 }.header_icon, .icon{
+    cursor: pointer;
     width:40px;
+
 }
 .header_icon:first-child{
     margin-right:24px;
@@ -33,3 +35,33 @@ body{
     width:97px;
     margin-right: auto;
 }
+.container_menu{
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+    padding:0px;
+}
+.container_menu__item{
+    font-weight: 500;
+    cursor: pointer;
+    margin:0 24px;
+    display: flex;
+    position: relative;
+    gap:8px;
+    align-items: center;
+}
+.container_menu__item:first-child{
+    margin:0px;
+    gap: 20px;
+    align-items: center;
+    color:#7E7E82;
+}
+.container_menu__divider{
+    height: 32px;
+    padding:0px;
+
+}
+.container_menu__item:active::after{
+    color:#999;
+}
+
